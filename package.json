@@ -1,0 +1,30 @@
+{
+  "name": "vue-stylist",
+  "version": "1.0.0",
+  "description": "Interestingly reactive styling in Vue.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/porpoise/vue-stylist.git"
+  },
+  "keywords": [
+    "vue",
+    "css",
+    "css-in-js"
+  ],
+  "author": "Raghav Misra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/porpoise/vue-stylist/issues"
+  },
+  "homepage": "https://github.com/porpoise/vue-stylist#readme",
+  "peerDependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
