@@ -12,11 +12,11 @@ const bind: DirectiveFunction = (el, { arg, value, modifiers }) => {
         el.style.setProperty(prop, value);
     } else if (typeof value === "object") {
         // If an object is passed, set a variable for each key.
-        Object.entries(value as Record<string, any>).forEach(([k, v]) => {
+        Object.entries(value as Record<string, unknown>).forEach(([k, v]) => {
             // If its camelcased, convert to kebab-case
             const prop = k !== k.toLowerCase() ? kebabify(k) : k;
 
-            el.style.setProperty(prop, v);
+            el.style.setProperty(prop, v as string);
         });
     }
 };

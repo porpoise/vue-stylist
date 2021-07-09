@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb-typescript-prettier",
+    "rules": {
+        "import/extensions": "off",
+        "no-console": "off"
+    },
+    "ignorePatterns": [
+        "rollup.config.js",
+        "dist/*",
+        "/**/*.d.ts"
+    ]
+}

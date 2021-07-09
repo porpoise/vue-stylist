@@ -34,7 +34,7 @@ export default [
         output: {
             file: "dist/index.js",
             format: "iife",
-            name: "VueStylist"
+            name: "VueStylist",
         },
         plugins: [typescriptPlugin, terserPlugin],
     },

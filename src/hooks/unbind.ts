@@ -12,7 +12,7 @@ const unbind: DirectiveFunction = (el, { arg, value, modifiers }) => {
         el.style.removeProperty(prop);
     } else if (typeof value === "object") {
         // If an object is passed, set a variable for each key.
-        Object.keys(value as Record<string, any>).forEach((k) => {
+        Object.keys(value as Record<string, unknown>).forEach((k) => {
             // If its camelcased, convert to kebab-case
             const prop = k !== k.toLowerCase() ? kebabify(k) : k;
 

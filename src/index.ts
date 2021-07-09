@@ -9,14 +9,14 @@ export interface IVueStylistConfig {
 }
 
 const VueStylist: PluginObject<IVueStylistConfig> = {
-    install(Vue, { directive }) {
-        Vue.directive(directive || "css", {
+    install(Vue, options) {
+        Vue.directive(options?.directive || "css", {
             bind,
             update,
             componentUpdated: update,
             unbind,
         });
-    }
-}
+    },
+};
 
 export default VueStylist;
