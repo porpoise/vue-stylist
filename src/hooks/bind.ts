@@ -20,3 +20,5 @@ const bind: DirectiveFunction = (el, { arg, value, modifiers }) => {
         });
     }
 };
+
+export default bind;
