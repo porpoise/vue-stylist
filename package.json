@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Interestingly reactive styling in Vue.",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w"
