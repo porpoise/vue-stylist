@@ -10,6 +10,8 @@ usually, to do this, you'd write some inline styles targeting the element you wa
 
 what `vue-stylist` does, is create a way to easily work with reactive styles, all while keeping **all** your css within the style tag of your sfc.
 
+oh also its like *under 800kb* **ungzipped**
+
 ## how lmao
 
 essentially it works by taking advantage of css variables, which are quite underrated even though they are very cool.
