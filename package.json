@@ -4,7 +4,8 @@
   "description": "Interestingly reactive styling in Vue.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,10 @@
     "vue": "^2.6.14"
   },
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "rollup": "^2.53.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.5",
+    "vue": "^2.6.14"
   }
 }
